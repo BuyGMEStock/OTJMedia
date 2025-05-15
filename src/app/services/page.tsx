@@ -133,7 +133,7 @@ export default function ServicesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[linear-gradient(to_bottom,#ff8a00,#ff5e62,#845ec2,#2c5ebd)] relative">
+    <main className="min-h-screen bg-[linear-gradient(to_bottom,#ff69b4,#ff8a00,#845ec2,#2c5ebd)] relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/10 pointer-events-none"></div>
       <div className="container-custom section-padding">
         <AnimatedSection initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-16 text-center">
@@ -188,11 +188,10 @@ export default function ServicesPage() {
             <div className="wave-animation" />
             <div className="relative z-10 max-w-3xl mx-auto">
               <div className="flex items-center justify-center gap-3 mb-6">
-                <SparklesIcon className="w-8 h-8 text-white/90" />
-                <h2 className="font-display text-3xl md:text-4xl font-semibold text-white/90 tracking-tight">Not Listed Above?</h2>
+                <h2 className="font-display text-3xl md:text-4xl font-semibold text-white/90 tracking-tight">Is Your Business Not Listed Above?</h2>
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-medium text-white/90 mb-4 leading-tight">
-                A Strategic Online Presence is Essential
+                Every Business Deserves a Strategic Digital Presence
               </h3>
               <h4 className="text-xl md:text-2xl font-display font-medium text-white/90 mb-8 leading-tight">
                 Elevate Your Business with a High-Performance Website
@@ -238,10 +237,12 @@ export default function ServicesPage() {
                 "OTJ Media transformed our digital presence. Since launching our new website, our appointment bookings have increased by 65%, and client inquiries are at an all-time high."
               </blockquote>
               <span className="text-base text-white/70 mb-10 text-center block font-medium">—Satisfied Client</span>
-              <Link href="/contact" className="btn-primary-gradient inline-flex items-center gap-2 text-base">
-                Schedule Your Strategy Session
-                <span className="text-lg">→</span>
-              </Link>
+              <div className="flex justify-center">
+                <Link href="/calendar" className="btn-primary-gradient inline-flex items-center gap-2 text-base">
+                  Schedule Your Strategy Session
+                  <span className="text-lg">→</span>
+                </Link>
+              </div>
             </div>
           </div>
         </AnimatedSection>

@@ -51,9 +51,9 @@ export default function Navigation() {
                 {item.name}
               </Link>
             ))}
-            <button className="btn-primary-gradient">
+            <Link href="/calendar" className="btn-primary-gradient">
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,9 +89,9 @@ export default function Navigation() {
                 {item.name}
               </Link>
             ))}
-            <button className="btn-primary-gradient w-full justify-center">
+            <Link href="/calendar" className="btn-primary-gradient w-full justify-center">
               Get Started
-            </button>
+            </Link>
           </div>
         </AnimatedSection>
       )}

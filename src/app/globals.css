@@ -10,6 +10,19 @@
     --mouse-x: 50%;
     --mouse-y: 50%;
   }
+
+  html, body {
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
 }
 
 @layer components {

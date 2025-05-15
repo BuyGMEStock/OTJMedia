@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const plusJakarta = Plus_Jakarta_Sans({ 
@@ -22,9 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${plusJakarta.variable} font-sans`}>
+      <body className={`${inter.variable} ${plusJakarta.variable} font-sans min-h-screen flex flex-col`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )
